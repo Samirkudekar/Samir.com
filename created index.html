@@ -3,47 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Job Portal - Find Your Dream Job</title>
+    <style>
+        /* Basic CSS styling - you'll want to expand this */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0a66c2;
+            color: white;
+            padding: 15px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-section {
+            background-color: #f4f4f4;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+        }
+        .search-box input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+        }
+        .search-box button {
+            padding: 10px 20px;
+            background-color: #0a66c2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .job-listings {
+            padding: 30px 0;
+        }
+        .job-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .job-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0a66c2;
+        }
+        .company-name {
+            color: #666;
+            margin: 5px 0;
+        }
+        .job-salary {
+            color: green;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">JobPortal</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of the website.</p>
-        </section>
+    <section class="search-section">
+        <div class="container">
+            <h1>Find Your Dream Job Today</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Job title, skills, or company">
+                <input type="text" placeholder="Location">
+                <button>Search Jobs</button>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about what we do here.</p>
-        </section>
+    <section class="job-listings container">
+        <h2>Latest Job Openings</h2>
+        
+        <div class="job-card">
+            <div class="job-title">Frontend Developer</div>
+            <div class="company-name">Tech Solutions Inc.</div>
+            <div class="job-location">Bangalore, India</div>
+            <div class="job-experience">2-5 years</div>
+            <div class="job-salary">₹6,00,000 - ₹10,00,000 PA</div>
+            <div class="job-description">
+                <p>We are looking for a skilled Frontend Developer proficient in HTML, CSS, JavaScript and React.</p>
+            </div>
+            <button>Apply Now</button>
+            <button>Save</button>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-title">Backend Developer</div>
+            <div class="company-name">Data Systems Pvt. Ltd.</div>
+            <div class="job-location">Hyderabad, India</div>
+            <div class="job-experience">3-6 years</div>
+            <div class="job-salary">₹8,00,000 - ₹12,00,000 PA</div>
+            <div class="job-description">
+                <p>Looking for Backend Developer with experience in Node.js, Python and database management.</p>
+            </div>
+            <button>Apply Now</button>
+            <button>Save</button>
+        </div>
+    </section>
 
-        <section id="services">
-            <h2>Services</h2>
-            <p>Explore the services we offer to help you achieve your goals.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us for more information.</p>
-        </section>
-    </main>
+    <section class="companies-section container">
+        <h2>Top Hiring Companies</h2>
+        <!-- Company logos would go here -->
+    </section>
 
     <footer>
-        <p>&copy; 2025 Your Website | All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 JobPortal. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
